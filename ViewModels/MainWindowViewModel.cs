@@ -117,7 +117,7 @@ namespace L046_Labb3_Code_Along.ViewModels
             ConfigViewVisible = Visibility.Collapsed;
             PlayViewVisible = Visibility.Visible;
 
-            PlayerViewModel.RestartGame();
+            PlayerViewModel.StartGame();
         }
 
         public void OpenConfigView(object? obj)

@@ -9,6 +9,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Threading;
 
 namespace L046_Labb3_Code_Along.ViewModels
@@ -108,24 +109,40 @@ namespace L046_Labb3_Code_Along.ViewModels
             else
             {
                 _timer.Stop();
-                MessageBox.Show("Time’s up!");
+                System.Windows.Forms.MessageBox.Show("Time’s up!");
                 ProgressToNextQuestion();
             }
         }
 
         public void RestartGame()
         {
-            
-            if(ActivePack == null)
+            if (ActivePack == null || ActivePack.Questions == null || ActivePack.Questions.Count == 0)
             {
-                MessageBox.Show("Please add atleast 1 Question pack with atleast 1 question");
+                System.Windows.Forms.MessageBox.Show("Please add at least 1 Question pack with at least 1 question");
                 return;
-            } else
+            }
+
+            PlayerPoints = 0;
+            QuestionNumber = 1;
+
+            CurrentQuestion = ActivePack.Questions[0];
+            RestartTimer();
+        }
+
+        public void StartGame()
+        {
+
+            if (ActivePack == null)
+            {
+                System.Windows.Forms.MessageBox.Show("Please add atleast 1 Question pack with atleast 1 question");
+                return;
+            }
+            else
             {
                 ProgressToNextQuestion();
             }
-                
         }
+
 
         private void ProgressToNextQuestion()
         {
@@ -139,17 +156,38 @@ namespace L046_Labb3_Code_Along.ViewModels
 
         private void SubmitAnswer(object? answer)
         {
-
+           
             var questions = ActivePack.Questions;
 
             if (answer == CurrentQuestion.CorrectAnswer)
             {
                 PlayerPoints++;
-                MessageBox.Show($"Correct!");
+                System.Windows.Forms.MessageBox.Show($"Correct!");
             }
             else
             {
-                MessageBox.Show("Incorrect");
+                System.Windows.Forms.MessageBox.Show("Incorrect");
+            }
+
+
+            if (QuestionNumber == ActivePack.Questions.Count)
+            {
+                System.Windows.Forms.MessageBox.Show($"You got {PlayerPoints.ToString()} Questions Correct! ");
+
+
+                var result = System.Windows.Forms.MessageBox.Show("Would you like to restart the game?",
+                                             "Game Over",
+                                             MessageBoxButtons.YesNo,
+                                             MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    RestartTimer();
+                    RestartGame();
+                }
+
+                return;
+
             }
 
             ProgressToNextQuestion();

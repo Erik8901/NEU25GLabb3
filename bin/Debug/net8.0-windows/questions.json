@@ -37,14 +37,38 @@
     "Name": "Pack 4",
     "Difficulty": 0,
     "TimeLimitInSeconds": 40,
+    "Questions": []
+  },
+  {
+    "Name": "1",
+    "Difficulty": 1,
+    "TimeLimitInSeconds": 60,
     "Questions": [
       {
-        "Query": "PACKZZ 4",
-        "CorrectAnswer": "CorrectAnswerPACKZZ 4",
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
         "IncorrectAnswers": [
-          "InCorrectAnswer1PACKZZ 4",
-          "InCorrectAnswer2PACKZZ 4",
-          "InCorrectAnswer3PACKZZ 4"
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
+        ]
+      },
+      {
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
+        ]
+      },
+      {
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
         ]
       }
     ]
