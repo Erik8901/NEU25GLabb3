@@ -1,0 +1,52 @@
+[
+  {
+    "Name": " Pack 3",
+    "Difficulty": 2,
+    "TimeLimitInSeconds": 10,
+    "Questions": [
+      {
+        "Query": "eeeeeeeeeeeeeeee",
+        "CorrectAnswer": "CorrectAnswere",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1e",
+          "InCorrectAnswer2e",
+          "InCorrectAnswer3ez"
+        ]
+      },
+      {
+        "Query": "wwww",
+        "CorrectAnswer": "w",
+        "IncorrectAnswers": [
+          "q",
+          "w",
+          "z"
+        ]
+      },
+      {
+        "Query": "sssssss",
+        "CorrectAnswer": "s1",
+        "IncorrectAnswers": [
+          "s",
+          "s",
+          "s"
+        ]
+      }
+    ]
+  },
+  {
+    "Name": "Pack 4",
+    "Difficulty": 0,
+    "TimeLimitInSeconds": 40,
+    "Questions": [
+      {
+        "Query": "PACKZZ 4",
+        "CorrectAnswer": "CorrectAnswerPACKZZ 4",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1PACKZZ 4",
+          "InCorrectAnswer2PACKZZ 4",
+          "InCorrectAnswer3PACKZZ 4"
+        ]
+      }
+    ]
+  }
+]
