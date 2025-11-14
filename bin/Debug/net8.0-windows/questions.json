@@ -1,8 +1,8 @@
 [
   {
     "Name": " Pack 3",
-    "Difficulty": 2,
-    "TimeLimitInSeconds": 10,
+    "Difficulty": 0,
+    "TimeLimitInSeconds": 60,
     "Questions": [
       {
         "Query": "eeeeeeeeeeeeeeee",
@@ -37,7 +37,35 @@
     "Name": "Pack 4",
     "Difficulty": 0,
     "TimeLimitInSeconds": 40,
-    "Questions": []
+    "Questions": [
+      {
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
+        ]
+      },
+      {
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
+        ]
+      },
+      {
+        "Query": "New Question",
+        "CorrectAnswer": "CorrectAnswer",
+        "IncorrectAnswers": [
+          "InCorrectAnswer1",
+          "InCorrectAnswer2",
+          "InCorrectAnswer3"
+        ]
+      }
+    ]
   },
   {
     "Name": "1",

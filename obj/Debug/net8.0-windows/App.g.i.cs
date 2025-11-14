@@ -46,7 +46,7 @@ namespace L046_Labb3_Code_Along {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.10.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.8.0")]
         public void InitializeComponent() {
             
             #line 5 "..\..\..\App.xaml"
@@ -61,7 +61,7 @@ namespace L046_Labb3_Code_Along {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.10.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.8.0")]
         public static void Main() {
             L046_Labb3_Code_Along.App app = new L046_Labb3_Code_Along.App();
             app.InitializeComponent();

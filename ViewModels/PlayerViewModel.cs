@@ -184,6 +184,13 @@ namespace L046_Labb3_Code_Along.ViewModels
                 {
                     RestartTimer();
                     RestartGame();
+                  }
+                if (result == DialogResult.No)
+                {
+                    RestartTimer();
+                    RestartGame();
+                    _mainWindowViewModel.PlayViewVisible = Visibility.Collapsed;
+                    _mainWindowViewModel.ConfigViewVisible = Visibility.Visible;
                 }
 
                 return;
